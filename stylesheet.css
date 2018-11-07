@@ -1,0 +1,132 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+}
+html {
+	background-color: #404040;
+}
+p, li, a, h1, h2, h3, h4, h5 {
+	color: white;
+}
+p, li, a {
+	font-family: 'Assistant', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	color: #e60000;
+	font-style: italic;
+}
+h3 {
+	font-family: 'Merienda', cursive;
+}
+h1 {
+	font-family: 'Kaushan Script', cursive;
+}
+.menu-home, .menu-map {
+	border: 3px #e60000 solid;
+	border-radius: 3px;
+	padding: 5px 5px;
+	background-color: #e60000;
+}
+.menu-home:hover {
+	background-color: white;
+	border: 3px white solid;
+	transition: .75s;
+}
+.menu-map:hover {
+	background-color: white;
+	border: 3px white solid;
+	transition: .75s;
+}
+.heading {
+	padding: 50px;
+	position: static;
+	background-color: #404040;
+	height: 200px;
+	width: 100%;
+}
+.intro {
+	padding-left: 50px;
+	max-width: 1000px;
+}
+.reminders {
+	padding-left: 50px;
+}
+.reminders ul {
+	padding-left: 20px;
+}
+.map {
+	padding-left: 100px;
+}
+.map p {
+	padding-top: 10px;
+}
+.map a {
+	padding-top: 10px;
+}
+.passwords p {
+	text-align: center;
+}
+.passwords h4 {
+	text-align: center;
+}
+.apapoolrules {
+	width: 1000px;
+	margin: 0 auto;
+}
+.apapoolrules p {
+	text-align: center;
+}
+
+.javascriptnotes-section1 ol {
+	padding-left: 50px;
+}
+.javascriptnotes-section2 ol {
+	padding-left: 50px;
+}
+
+#intro {
+	display: block;
+}
+#weaponchoice {
+	display: none;
+}
+#weaponchoice img {
+	height: 250px;
+	width: 250px;
+}
+#dragon-fight {
+	display: none;
+}
+#finish {
+	display: none;
+}
+#losingscreen {
+	display: none;
+}
+#cyclops-fight {
+	display: none;
+}
+#choose-enemy {
+	display: none;
+	background-color: transparent;
+}
+
+#choice {
+	display: block;
+	padding-left: 100px;
+}
+#choice h3:hover {
+	font-style: italic;
+	color: #e60000;
+	cursor: pointer;
+}
+#result {
+	display: none;
+}
+
+#opdate {
+	padding-left: 50px;
+}

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Database Z | Forza</title>
+	<link rel="stylesheet" href="stylesheet.css" type="text/CSS">
+	<link href="https://fonts.googleapis.com/css?family=Assistant|Kaushan+Script|Merienda" rel="stylesheet">
+	<script src="app.js"></script>
+</head>
+<body>
+	<div class="heading">
+		<h1><em>Database Z</em></h1>
+		<a href="./home.html" class="menu-home">Home</a>
+		<a href="./map.html" class="menu-map">Map</a>
+	</div>
+	<div class="intro">
+		<h3>Forza</h3>
+		<p>This is a collection of useful pages and guides for Forza. Anything that has to do with the game can be stored here. This page is also to act as a folder for any more specific topics that relate to Forza.</p>
+	</div>
+	<a href="https://forums.forzamotorsport.net/" target="_blank">Forza Forums Link</a>
+	<div class="folder">
+
+	</div>	
+	<div class="forza-links">
+		<h3>Tuning Posts and Guides</h3>
+		<a href="https://forums.forzamotorsport.net/turn10_postst105980_CW-s-Tuning-guide--Calc-Spreadsheet---NEW-MOBILE-WEB-APP.aspx">CesarsWrath Tuning Guide Forum Post</a>
+		<h3>Full CesarsWrath Tuning Guide</h3>
+		<p>INTRO
+			<div>
+				<br>
+				Hey folks how's it going? My name is Caesars aka Johnboy, I have been Driving since 2009 on Forza games and in that time have become a very capable racer and tuner but my paint skills still leave a lot to be desired. I wouldn’t say I know all there is to know about tuning but I know how to get good reliable tunes for general use. I just wish to share what knowledge I have picked up through 8 years of Forza titles which also includes competitive racing.
+				<br>
+				So I have for you a complete guide on how to tune a car on Forza Motorsport and Forza Horizon titles, this is designed to be as simple as possible to give you a strong base to work from and to be user friendly mainly for people starting out in tuning. My methods are not necessarily the definitive way to tune, simply just offering another angle to tune from. My methods have been tested across different Forza Titles, please feel free to leave feedback by getting in touch.
+				<br>
+				You can get hold of me at any of the following. My XBL My Twitter My Twitch
+				<br>
+				My calculation methods are done in Imperial Units, however RaindancerAU’s spreadsheet accommodates for Metric Units as well.
+				<br><br>
+				WHAT YOU WILL NEED
+				<br><br>
+				You will need the following to start.
+				<br>
+				The cars weight, the cars distribution (front %) and a scientific calculator or your phone (just for the % button). We will be using the calculator with the Springs, Rebound and Bumps and Anti-Roll Bars.
+				<br>
+				You can find the front when you press up on the D pad from the cars build section where all the cars stats are shown.
+				<br><br>
+				THE BUILDS
+				<br><br>
+				Before you start a tune on any car it is important to first make sure you have a strong build on your car, a good balance between handling and power will suit you well. I mostly always upgrade the Platform and Handling to Race, my only two exceptions are if I'm working a low class then I may not use the full weight reduction, unless I'm starting with a really low class. The second is that I very rarely put in a Roll Cage as it adds a lot of weight and I find the trade-off between weight gain and Handling gain not to be worth it, and to be honest you don't really need it.
+				<br>
+				Race tires are almost always a must on track (Forza Motorsport) unless you’re making a car for off road (Forza Horizon), then dirt tires and dirt suspension are a must, however with Race Tires I use them a lot in A Class and above, if your building for sub A class (B and lower) then Race Tires will cost you a lot of PI, so you can go Sport or Street without it having too much of a negative effect. Naturally if you’re building for OFF ROAD then you will certainly benefit from having off road suspension and tyres.
+				<br>
+				Aero is again almost always a must unless building a speed tune, as down force is your best friend so be sure to put on put on the Forza wings. Some cars like the Lotus '99 or a KTM X-BOW will feel more manageable without a front aero Forza wing.
+				<br>
+				Always put a Race differential on as this part never costs PI.
+				<br>
+				Engine blocks and turbos, with this area of the build you want to weigh this up for yourself, so when looking at Engine blocks take note of how much weight is gained or lost and the same for the power whilst keeping in mind what Class or you are building for. when it comes to what kind of aspiration to use this is again something to pay attention to. Most people like to whack in a turbo and fully upgrade it and be done with it, this can be a mistake. Sometimes it’s better to use a centrifugal discharger, although weight difference is a noticeable amount you save more PI by using it, with the saved PI you have more room to reduce more weight whilst adding additional power that you wouldn't of otherwise had.
+				<br>
+				Lastly the Transmission (Gearbox) unless it only adds 1 or 2 PI then I tend to stay away from them as more often than not it will add to much PI.
+				<br><br>
+				Pro Tip
+				<br><br>
+				You can look at tunes of top racers to give yourself a good idea of what overall stats you should be aiming for with any given car, after that just keep tinkering with the build until you really think you couldn't get anything else in to into it.
+				<br><br>
+				HOW TO WORK OUT YOUR POWER TO WIEGHT RATIO (OPTIONAL)
+				<br><br>
+				To find out what your P/W Ratio is simply divide your cars power output (HP) by its total mass (weight) this gives you a value. This value will be, I believe equal to killer watts per kilogram Kws/Kgs, this can then be converted if you wish to Hps/Lbs < horse power per pound using as simple Google conversion calculator.
+				<br>
+				However, if you don't want to faff around that much the original value will do the same job.
+				<br>
+				So for example I did a P/W Ratio on a car earlier, I had 449 Horses and it weighed 2,682lbs. So 449÷2682=0.156. If I increase power and/or decrease weight, the result would be a higher value. Which means more power per kilogram/pound of the car.
+				<br>
+				500÷2550=0.196
+				<br>
+				I found this interesting and thought I would add it to the guide, personally though I think I will stick to just seeing if I get a faster time.
+				<br><br>
+				(SEE EDITORIAL NOTES AT THE BOTTOM OF THE POST FOR ADDITIONAL POINTERS)
+				<br><br>
+				THE TUNING
+				<br><br>
+				TYRES
+				<br><br>
+				Now it’s time to tune your car. Your tyres are the most important aspect of tuning, even if your other settings are perfect, if you don't have good pressures all that will be worth jack.
+				<br>
+				So what is PSI? Well simply it is a measure of the amount of air in the tires, in pounds per square inch.
+				<br>
+				If you over inflate your tyres then less of the rubber is in contact with the surface of the road, as a result your car will become bouncy, when this happens the traction suffers so handling abilities and braking suffer a lot.
+				<br>
+				If your tyres are under inflated then to much of the rubber is in contact with the road surface, as a result they will wear out quickly if you use sim damage but further more over heat as well, not good folks.
+				<br>
+				I find the sweet spot to be between 27psi and 32psi depending on how much power a car has and how much it weighs, overall as a rule of thumb I keep most of my cars psi's at 28psi front and rear, as I don't use sim damage this allows my tyres to heat quickly which is particularly helpful on Multiplayer Races.
+				<br><br>
+				OFF ROAD PSI
+				<br><br>
+				For tyre pressure off road I would advise a region of 18 to 25, this will make the tyres grip more on the loose dirt and more responsive of road. Personally I have found that a PSI of 22 front and rear works very well.
+				<br><br>
+				Pro Tip
+				<br>
+				“Just being a mediocre driver has never been my ambition. That’s not my style.”
+				<br>
+				-Michael Schumacher-
+				<br><br>
+				GEARING
+				<br><br>
+				For me this is very simple, in the fact that I hardly ever use a race transmission, as I mentioned in the BUILD section. However, if i do put on a street, sport or race transmission then the only thing I’ll change is the final drive ONLY. for greater speed or greater acceleration.
+				<br>
+				If you do want more information on this subject, simply just google search FORZA GEARING GUIDE or FORZA TUNING GEARS.
+				<br>
+				EDIT
+				<br>
+				This edit comes with thanks to PTG Baby Cow he left a comment on another one of my posts that I think people will find very useful.
+				<br>
+				"Just something you may want to think about in the future. If someone posts a tune and has gears listed, it’s not really a good idea to test them with different gears. Gearing also effects handling, so the car you are driving could end up being quite a bit different than what they built. Gearing directly effects differential, the longer the gears are the more effect the decel dif is going to have, the shorter the gears the more the accell dif is going to be pronounced. I know in many of my (especially track specific) tunes if you are not in the correct gear for the corner it will completely change the characteristics of the car and how well you can take the corner, changing the gearing to default could be putting the car in the wrong gear for the corner which will not allow the car to navigate the corner as well as with the gearing provided by the tuner. Your may have worked with default gearing, because it was tuned with default gearing. Also to reduce some of the understeer you would want to raise the accell not lower it, but it also would depend on where the understeer is happening"
+
+				-PTG Baby Cow-
+				<br><br>
+				ALIGNMENT
+				<br><br>
+				CAMBER
+				<br><br>
+				Camber is simply the angle of wheel in relation to the wheel, if you have a camber of 0.0 then the wheel straight up, positive camber (above 0) then the wheel at the top point is leaning away from the body, negative camber (below 0) then the at the top point is leaning in towards the body, this is ideal.
+				<br>
+				You should never really have the need to run positive camber, you should always be aiming at negative camber. This is because as you’re going through a right hand corner at 100 mph the car leans to the left with lateral movement, there for if your camber is 0.0 (wheel straight up) then this is forced into a positive angle when cornering, which means less contact between the rubber and the road surface, so if you put on negative camber to start with when you go through that corner the wheels will be in more of an upright position, therefore more rubber contact, more traction overall quicker through the corners.
+				<br><br>
+				Pro Tip
+				<br>
+				My Average Camber setting by class.
+				<br>
+				E to C -1.2F max and -0.5R max
+				<br>
+				B to A -2.3F max and -1.2R max
+				<br>
+				S and Higher -3.5F max and -2.5R max
+				<br>
+				This works on multiple Forza titles.
+				<br>
+				The higher the class the more force is being transferred so more negative camber is needed, the lower the class the less force is being transferred so less negative camber is needed.
+				<br><br>
+				TOE
+				<br>
+				Toe-in is when the front of the tyres points in towards the body and toe-out the front of the tyres point out away from the body. Toe-in increases stability but reduces turn in response, whilst toe-out has the opposite effect, increasing turn in response but reducing stability in a straight line.
+				<br>
+				Typically, I never really use these settings and leave them 0.0 front and rear, however a value between -0.1 and -0.3 (rear only) can offer an advantage in a straight line with more powerful builds.
+				<br><br>
+				CASTER
+				<br><br>
+				The caster angle is the angular displacement from the vertical axis of the suspension of a steered wheel in a car in longitudinal direction, this is used to optimise a cars handling characteristics in particular driving situations. In Forza terms this simply allows you to run less Negative camber the more caster you use.
+				<br>
+				Typically, these are the settings I use when tuning:
+				<br>
+				E to C class 7.0
+				<br>
+				B to A class 6.0 to 6.5
+				<br>
+				S class and Higher 5.0 to 6.0
+				<br><br>
+				ANTI ROLL BARS
+				<br><br>
+				I have a very simple technique to tuning anti-roll bars (ARB's), The maximum number you can now have on your ARB's in the FH3 is 65.0 front and rear. The range has been increased from the normal maximum value of 40 on previous titles. Luckily this method still works the same way.
+				<br>
+				So example if your car has a 50% front split (50% of the cars overall weight) then you will type in to your calculator 65 - 50% which will = 32.5 as your ARB front value, this will obviously leave 50% left on the rear which will also result as 32.5 your rear ARB Value.
+				<br>
+				Now if you have a split of 43% front your Rear will of course be 57%, so you use exactly the same method. The % Front shown in game will almost always work out your front ARB then you would use the remaining % to work out the rear, so like I said if the front is 43% the remainder is 57% (always work it as 100% overall).
+				<br>
+				In some cases, you can try inverting your results to change the cars behaviour. This can work well on AWD types.
+				<br><br>
+				Pro Tip
+				<br>
+				Old Forza trick if you are still having problems with your ARB's you can try 1 and 40 (under-steer fix).
+				ADDITIONAL NOTE:
+				<br>
+				When you have your ARB's set but still find them to soft or stiff dependent on your driving style you can try the following settings that I have developed:
+				<br>
+				Soft = -5 F+R ARB
+				<br>
+				Supersoft = -10 F+R ARB
+				<br>
+				Stiff = +5 F+R ARB
+				<br>
+				Superstiff = +10 F+R ARB
+				<br>
+				By maintaining the difference between the front and rear from your original calculation, you maintain the balance of the car.
+				<br>
+				Also note stiffer ARB's will probably require softer springs and a softer ARB will probably require stiffer springs.
+				<br><br>
+				Pro Tip
+				<br>
+				“If everything seems under control, then you are not going fast enough”
+				<br>
+				-Mario Andretti-
+				<br><br>
+				SUSPENSION
+				<br><br>
+				With suspension we use basically the same method but with an added difference. So for this we need to include the cars weight as well.
+				<br>
+				So if the car weights 3,000 lbs and has a front of 50% it will have an even split front and rear there for you'll have 1,500 lbs Front and Rear, since the 1,500 has to be split between both wheels at the front and rear you then simply divide the 1,500 by 2 which will give you 750 lbs (in game front suspension represents 1 wheel as does the rear).
+				<br>
+				This is how it should look on your calculator working a 50% 3,000 - 50% = 1,500 ÷ 2 = 750
+				<br>
+				When working with any front % value the game gives you, it will always equal your car’s Rear value. IE if you take away 43% of the cars overall weight it will equal to the 57% left over (Rear value now divide by 2), likewise if you take away 57% of the cars overall weight it will equal the 43% left over (Front value now divide by 2).
+				<br>
+				Again as with the ARB's you can invert these result (swap them around) to change the cars behaviour.
+				<br>
+				NOTE that these settings are basic, which in FH3 do a pretty sweet job but if you soften your springs by 100 to 300 it will most likely give you better handling of road. So just take some time to find out your preference.
+				<br><br>
+				OFF ROAD SUSSPENSION
+				<br><br>
+				Additionally, if you have chosen the off road suspension in the build then you will notice when tuning that even the highest settings will be lower than the calculation result. So to counter this do the calculation and whatever the difference between Front and Rear, make sure you maintain that difference. On a medium off road setting.
+				<br><br>
+				Pro Tip
+				<br>
+				“Winning has nothing to do with racing. Most days don’t have races anyway. Winning is about struggle and effort and optimism, and never, ever, ever giving up.” -Amby Burfoot-
+				<br><br>
+				RIDE HEIGHT
+				<br><br>
+				Overall you want your cars as low as possible for the track, but if you set it too low then your car will scrape the track a lot on bumpier tracks. Really values set between 3.5 and 5.0 are a good way to go, keeping front and rear ride heights level will make it easier to keep a balanced car. In some cars this will be impossible like the SRT VIPER GTS '13 The max front height is 3.8 whilst the rear minimum height is 4.3, this creates a very specific character trait, which is the front is lower and actually has a better turn in, whilst the rear is higher it adds an effect of more downforce.
+				<br>
+				The above will only be relevant forb the roads. If you’re off roading a lot, then obviously a much higher ride height will be preferable.
+				<br><br>
+				OFF ROAD RIDE HIEGHT
+				<br><br>
+				Again if you have chosen the off road suspension then your ride height will be higher. A minimum of 10 to 12 inches or as close as you can get, this should allow good clearance.
+				<br><br>
+				Pro Tip
+				<br>
+				“Fact One: Races are won or lost in key moments. Fact Two: Success in the sport is, above all else, about enduring suffering”
+				<br>
+				-Chris McCormack-
+				<br><br>
+				DAMPING
+				<br><br>
+				REBOUNDS AND BUMPS
+				<br><br>
+				With the damping you can change the rebound stiffness and bump stiffness, these can be changed to either hard or soft. Tuning these settings can improve your handling by increasing and/or decreasing grip. It basically controls your suspensions rate of travel in two directions.
+				<br>
+				Rebound damping controls the rate of extension as the suspension rebounds away from the wheel wells. Increasing the front bump damping stiffness will increase transitional understeer of the car. However, keep in mind that too much bump damping will cause problems over bumpier ground. Decreasing the stiffness of the damping in the front tyres will increase transitional oversteer.
+				<br>
+				Increasing the front bump damping stiffness will increase transitional understeer of the car. However, keep in mind that too much bump damping will cause problems will cause issues over bumpier ground also. Decreasing the stiffness of the damping in the front tyres will increase the transitional oversteer.
+				<br>
+				So typically what I tend to do and what I find works really well, is if my springs are at 750, I will take that as 7.5 and then plus 1 = 8.5 this is my starting point on the rebound and then increase or
+				<br>
+				decrease accordingly, if the car feels to stiff I decrease the rebound, if it feels to lose then I increase the rebound, remembering to change the rear setting with it so it is still balanced.
+				<br>
+				As for the bumps I will never use anymore more than 75% (3 quarters and stiffer) and no less than 50% (half and softer) this is the best margin to work out your Bump, so if we take the rebound value of 8.5 and take away 25% (1 quarter), this will give you a value equal to 75%. I personal find taking away 33% is the sweet spot.
+				<br>
+				Still the same method for OFF ROAD.
+				<br><br>
+				Pro Tip
+				<br>
+				“As a racing driver you must always go for the gap, once you stop going for the gap you are no longer a racing driver.”
+				<br>
+				-Ayrton Senna-
+				<br><br>
+				AERO
+				<br><br>
+				Aero or Aerodynamics is a force that is produced as the air passes over the car that pushes the car down, higher the speeds the more downforce is produced. By rule of thumb downforce is your best friend so wrack it all on, the more the better. However, if your tuning for Drag you will want as little as possible. In the real world downforce can have an effect on how you setup your springs, however, of years of playing Forza I believe this not to be as effective in Forza terms therefore you barely need to change your springs if at all. The only big difference I notice within the game is it give you a greater turning ability.
+				<br><br>
+				Pro Tip
+				<br>
+				“We’re far from having too much horsepower… My definition of too much horsepower is when all four wheels are spinning in every gear.”
+				<br>
+				-Mark Donohue-
+				<br><br>
+				BRAKES
+				<br><br>
+				With the brakes you have two setting FORCE and Pressure, when tuning the FORCE, a 50% split will divide the overall breaking force equally on the front and on the rear. A 55% force will make the front of the car break harder than the rear. I strongly recommend that you use between 52% and 58%, which ever gives you the best 100-0 breaking distance.
+				<br>
+				When tuning the Pressure there a few different ideas out there but the one setting I use on all cars is full on 200% pressure this may seem extreme but believe me it works, it allows you to very lightly touch the trigger whilst being able to slow the car quickly.
+				<br>
+				NOTE: This works good in short multiplayer races, which is most public lobbies. If you are using sim damage and/or more into endurance type races then you will want to set the Pressure a lot lower probably by 50% or more, others wise your breaks will overheat and most likely fail, not a good scenario.
+				<br><br>
+				Pro Tip
+				<br>
+				“Finishing races is important, but racing is more important.”
+				<br>
+				-Dale Earnhardt-
+				<br><br>
+				DIFFERENTIAL
+				<br><br>
+				Finally, we get to differential, it controls how much power is transferred to the wheels (acceleration) and how much it slows the car by. A NOOB forgive the term would go 100 and 0, this is bad because all that power being sent to the wheels is only going to make the wheel’s spin and spin, so the tyres will not be biting the track so your losing time. If your decel is too low it can cause your car lock the axles.
+				<br>
+				So for simplicity I will show you typical values that I use.
+				<br>
+				RWD between 35% and 80% accel. Depending on how much power you have, more power less Accel, less power more Accel.
+				<br>
+				between 8% and 16% decel.
+				<br>
+				FWD between 25% and 45%
+				<br>
+				between 8% and 16%
+				<br>
+				AWD I tend to use just one set up here that I find works extremely well.
+				<br>
+				29% Front accel
+				<br>
+				0% Front decel
+				<br>
+				59% Rear accel
+				<br>
+				18% Rear decel
+				<br>
+				69% Split, Like I said find this works amazing well.
+				<br><br>
+				Pro Tip
+				<br>
+				“The racing driver’s mind has to have the ability to have amazing anticipation, coordination, and reflex. Because of the speed the car goes”
+				<br>
+				-Emerson Fittipaldi-
+				<br><br>
+				EDITORIAL NOTES
+				<br>
+				I was asked by a member of the community if there was any calculous for ride height, this is my reply and which I believe will have relevance being here in the main post.
+				<br>
+				I don't believe there is a specific calculation for ride height, however if you running a stiff setup then ride height can be lower and vice versa, higher ride height for softer springs.
+				<br>
+				For example, if you’re running the Nuremburg Ring, a track with elevations and banks using stiffer springs there would be a lot more compression in the springs than normal, so you would want higher than normal ride height to compensate for the extra force being pushed downwards in up and down elevation.
+				<br>
+				For example, again if your running Silverstone or Monza using stiffer springs you can make the ride height lower because those types of circuits have next to no elevations, so this would mean less compression on the springs there for you don't need to compensate with the ride height and you can have them lower.
+				<br>
+				Obviously on FH3 there is different types of terrain instead of tracks. I would definitely advise 5-7 inches as an all-round mark to aim at.
+				<br>
+				Another member was confused how I work out my springs over each wheel, here is my response with the original comment.
+				<br>
+				Question “(in game front suspension represents 1 wheel as does the rear). Can you explain a little more how you came to this conclusion? I haven't seen it mentioned in any of the other guides.”
+				<br>
+				Answer "So if the car weights 3,000 lbs and has a front of 50% it will have an even split front and rear there for you'll have 1,500 lbs Front and Rear, since the 1,500 has to be split between both wheels at the front and rear you then simply divide the 1,500 by 2 which will give you 750 lbs (in game front suspension represents 1 wheel as does the rear)."
+				<br>
+				“Of cause, so when you’re on your tuning screens when you’re playing the game and you just spilt the cars weight like I have shown i.e. 3000lbs by 50% Front you get 1500lbs. If it was a case on the suspension tuning that the front was both wheels and equal to half the cars weight 1500lbs, then you would find you could not fit 1500lbs on the scale and if you did then the car would be so stiff that it would be undrivable, that's why you split that 1500 by 2.
+				<br>
+				Hope this helps clear it up for you my friend”
+				<br>
+				I had another great comment from PTG Baby Cow, and he's spot on in fairness
+				<br>
+				“pretty good advice for a base tune. A little vague on the build portion of the write-up.
+				<br>
+				Also may want to break the section down in tyres on the build. U said you try to always use race tyres, but this is actually pretty poor advice in the lower classes. Up until around A class unless going for an all-out grip build rarely do I use race tyres. They eat up way too much pi.”
+				<br>
+				So at the time of this comment I had been racing a lot of B Class, as PTG Baby Cow points out in these lower classes (Sub A Class) Race Tires are not needed. What I have found myself doing in lower classes is using greater rear tire width instead of a better tire compound, and only rear tire width leaving the front width stock as I find this gives the car better stability. This is something I have stared implementing in the higher classes also, so long as I am not losing to much power and/or
+				adding to much PI. I believe the stability comes from having more contact surface area (The amount of rubber in contact with the track) it also allows the power to be put down better.
+				<br>
+				Build section has been edited with additional detail, more info on tires and aspiration details added.
+				<br>
+				Additionally, the build area may still be slightly vague, but with reason. I have given you the basics in section with some details but I want you to play with this area yourself so that you are building it yourself and get the chance to explore different variations.
+				<br>
+			</p>
+			</div>
+		</div>
+	<button type="button" ondblclick="level3Complete();">Level 3</button>
+	<div class="orl">
+		<h3><a href="https://orl-esports.com/" target="_blank">Online Racing League</a></h3>
+		<p>This section is for storing useful information about past or upcoming ORL series.</p>
+		<br><br>
+		<h3>2018 Scirocco R Round 2 Information</h3>
+		<h4>Race Formatting</h4>
+			<p>Each race will consist of a qualifying session of 5 laps, and two races following. The first race will be grid ordered by qualifying time, and the second race will be grid ordered by reverse finishing time. Each race will take around 30 minutes.</p>
+			<br>
+		<h4 id="orl-schedule">Race Schedule</h4>
+		<div class="timevslaps">
+			<!--
+			<p>Times of Day / Best Lap Times</p>
+			<ul>
+				<li>Early Morning (6-8AM)</li>
+				<br>
+				<li>No Data Logged</li>
+			<ul>
+			<br>
+			<ul>
+				<li>Morning (8-Noon)</li>
+				<br>
+				<li>No Data Logged</li>
+			</ul>
+			<br>
+			<ul>
+				<li>Afternoon (Noon-5PM)</li>
+				<br>
+				<li>No Data Logged</li>
+			</ul>
+			<br>
+			<ul>
+				<li>Evening (5-10PM)</li>
+				<br>
+				<li>No Data Logged</li>
+			</ul>
+			<br>
+			<ul>
+				<li>Night (10-Midnight)</li>
+				<br>
+				<li>No Data Logged</li>
+			</ul>
+			<br>
+			<ul>
+				<li>Late Night (Midnight-6AM)</li>
+				<br>
+				<li>No Data Logged</li>
+			</ul>
+		-->
+		<!--Trial Outline
+			<ul>
+				<li>Trial #</li>
+				<li>Tune: </li>
+				<li>Date: </li>
+				<br>
+				<li>Lap 1: (Outlap)</li>
+				<li>Lap 2: </li>
+				<li>Lap 3: </li>
+				<li>Lap 4: </li>
+				<li>Lap 5: </li>
+				<br>
+				<li>BEST LAP: (Lap #)</li>
+				<li>AVERAGE W/OUTLAP: </li>
+				<li>AVERAGE W/O OUTLAP: </li>
+			</ul>
+		-->
+		<p>Race 1:</p>
+				<p>Time: November 5 at 1PM MST</p>
+				<p>Race Conditions: Dry</p>
+				<p>Track: Road America Full Circuit</p>
+			<p>Times to aim for:</p>
+				<p>Best Time: 2:20.9</p>
+				<p>AMS Jubba: 2:21.535</p>
+				<p>AMS Maximus: 2:21.561</p>
+				<p>AMS Kustom Dipz: 2:21.863</p>
+				<p>PMC Goliath: 2:21.912</p>
+				<p>AlfieW46: 2:22.322 (Time Beaten!)</p>
+			<br>
+			<p>Percentage of flagged laps: 60%</p>
+			<br>
+			<p>Deductions</p>
+				<p>The lap following the outlap is typically not the fastest lap of the race.</p>
+				<p>Lap 3 is usually when a good lap (less than 2:23.000) is completed.</p>
+				<p>The two laps following the fastest lap are increasingly slower.</p>
+				<p>An average outlap time is between 2:27.000 and 2:27.999. (Specifically: 2:27.435)</p>
+				<p>The first two laps are usually flagged, then the third is clean.</p>
+				<p>The lap average without factoring in the outlap is usually around 0.8s faster. (0.792s for trial 1, 0.705s for trial 2.)</p>
+				<p>Playing earlier in the day typically yields better lap times.</p>
+				<p>The second lap is typically around 3.7s faster than the outlap. (3.752s for trial 1, 3.607s for trial 2.)</p>
+			<br>
+			<p>Times of Day / Best Lap Times</p>
+			<ul>
+				<li>Early Morning (6-8AM)</li>
+				
+				<li>No Data Logged</li>
+			<ul>
+				<br>
+			<ul>
+				<li>Morning (8-Noon)</li>
+				
+				<li>No Data Logged</li>
+			</ul>
+			<br>
+			<ul>
+				<li>Afternoon (Noon-5PM)</li>
+				
+				<li>No Data Logged</li>
+			</ul>
+			<br>
+			<ul>
+				<li>Evening (5-10PM)</li>
+				
+				<li>5:35PM - 2:22.491</li>
+				<li>9:55PM - 2:22.805</li>
+			</ul>
+			<br>
+			<ul>
+				<li>Night (10-Midnight)</li>
+
+				<li>10:21PM - 2:23.150</li>
+				<li>10:44PM - 2:22.260</li>
+				<li>10:57PM - 2:22.985</li>
+				<li>11:12PM - 2:23.057</li>
+				<li>11:28PM - 2:22.849</li>
+				<li>11:44PM - 2:23.058</li>
+			</ul>
+			<br>
+			<ul>
+				<li>Late Night (Midnight-6AM)</li>
+				
+				<li>No Data Logged</li>
+			</ul>
+			<p>Data Logging:</p>
+			<ul>
+				<li>Trial 1</li>
+				<li>Tune: orl optimized</li>
+				<li>Date: 1 November 2018 (5:35PM)</li>
+				<br>
+				<li>Lap 1: 2:26.944 (Outlap) (Flagged)</li>
+				<li>Lap 2: 2:23.192 (Flagged)</li>
+				<li>Lap 3: 2:22.811</li>
+				<li>Lap 4: 2:23.438</li>
+				<li>Lap 5: 2:22.491</li>
+				<br>
+				<li>BEST LAP: 2:22.491 (Lap 5)</li>
+				<li>AVERAGE W/OUTLAP: 2:23.775</li>
+				<li>AVERAGE W/O OUTLAP: 2:22.983</li>
+			</ul>
+			<br>
+			<ul>
+				<li>Trial 2</li>
+				<li>Tune: orl optimized</li>
+				<li>Date: 1 November 2018 (10:57PM)
+				<br>
+				<li>Lap 1: 2:27.926 (Outlap) (Flagged)</li>
+				<li>Lap 2: 2:24.319 (Flagged)</li>
+				<li>Lap 3: 2:22.985</li>
+				<li>Lap 4: 2:23.086 (Flagged)</li>
+				<li>Lap 5: ~2:23.2 (Flagged)</li>
+				<br>
+				<li>BEST LAP: 2:22.985 (Lap 3)</li>
+				<li>AVERAGE W/OUTLAP: 2:24.103</li>
+				<li>AVERAGE W/O OUTLAP: 2:23.398</li>
+			</ul>
+			<ul>
+				<li>Trial 3</li>
+				<li>Tune: orl optimized</li>
+				<li>Date: 4 November 2018 (9:55PM)</li>
+				<br>
+				<li>Lap 1: 2:27.419 (Outlap)</li>
+				<li>Lap 2: 2:23.765</li>
+				<li>Lap 3: 2:24.347 (Flagged)</li>
+				<li>Lap 4: 2:22.945</li>
+				<li>Lap 5: 2:22.805</li>
+				<br>
+				<li>BEST LAP: 2:22.805 (Lap 5)</li>
+				<li>AVERAGE W/OUTLAP: 2:24.256</li>
+				<li>AVERAGE W/O OUTLAP: 2:23.466</li>
+			</ul>
+			<ul>
+				<li>Trial 4</li>
+				<li>Tune: orl optimized</li>
+				<li>Date: 4 November 2018 (10:21PM)</li>
+				<br>
+				<li>Lap 1: 2:27.346 (Outlap)</li>
+				<li>Lap 2: 2:23.085 (Flagged)</li>
+				<li>Lap 3: 2:23.665</li>
+				<li>Lap 4: 2:23.150 (Flagged)</li>
+				<li>Lap 5: Unknown (Flagged)</li>
+				<br>
+				<li>BEST LAP: 2:23.150 (Lap 4)</li>
+				<li>AVERAGE W/OUTLAP: 2:24.312</li>
+				<li>AVERAGE W/O OUTLAP: 2:23.300</li>
+			</ul>
+			<ul>
+				<li>Trial 5</li>
+				<li>Tune: orl optimized</li>
+				<li>Date: 4 November 2018 (10:44PM)</li>
+				<br>
+				<li>Lap 1: 2:27.906 (Flagged) (Outlap)</li>
+				<li>Lap 2: 2:22.961</li>
+				<li>Lap 3: 2:22.405</li>
+				<li>Lap 4: 2:22.260</li>
+				<li>Lap 5: ~2:22.500 (Flagged)</li>
+				<br>
+				<li>BEST LAP: PR 2:22.260(Lap 4)</li>
+				<li>AVERAGE W/OUTLAP: 2:23.606</li>
+				<li>AVERAGE W/O OUTLAP: 2:22.532</li>
+			</ul>
+			<ul>
+				<li>Trial 6</li>
+				<li>Tune: orl optimized</li>
+				<li>Date: 4 November (11:12PM)</li>
+				<br>
+				<li>Lap 1: 2:27.017 (Flagged) (Outlap)</li>
+				<li>Lap 2: 2:23.069 (Flagged)</li>
+				<li>Lap 3: 2:23.057</li>
+				<li>Lap 4: 2:23.141 (Flagged)</li>
+				<li>Lap 5: ~2:24.000 (Flagged)</li>
+				<br>
+				<li>BEST LAP: 2:23.057 (Lap 3)</li>
+				<li>AVERAGE W/OUTLAP: 2:24.057</li>
+				<li>AVERAGE W/O OUTLAP: 2:23.317</li>
+			</ul>
+			<ul>
+				<li>Trial 7</li>
+				<li>Tune: orl basic tune</li>
+				<li>Date: 4 November 2018 (11:28PM)</li>
+				<br>
+				<li>Lap 1: 2:26.993 (Flagged) (Outlap)</li>
+				<li>Lap 2: 2:23.232 (Flagged)</li>
+				<li>Lap 3: 2:23.186 (Flagged)</li>
+				<li>Lap 4: 2:22.849</li>
+				<li>Lap 5: 2:23.300 (Flagged)</li>
+				<br>
+				<li>BEST LAP: 2:22.849(Lap 4)</li>
+				<li>AVERAGE W/OUTLAP: 2:23.912</li>
+				<li>AVERAGE W/O OUTLAP: 2:23.142</li>
+			</ul>
+			<ul>
+				<li>Trial 8</li>
+				<li>Tune: orl basic tune</li>
+				<li>Date: 4 November 2018 (11:44PM)</li>
+				<br>
+				<li>Lap 1: 2:27.218 (Flagged) (Outlap)</li>
+				<li>Lap 2: 2:23.406</li>
+				<li>Lap 3: 2:23.058</li>
+				<li>Lap 4: 2:23.525</li>
+				<li>Lap 5: 2:23.242</li>
+				<br>
+				<li>BEST LAP: 2:23.058 (Lap 3)</li>
+				<li>AVERAGE W/OUTLAP: 2:24.090</li>
+				<li>AVERAGE W/O OUTLAP: 2:23.308</li>
+			</ul>
+			<ul>
+				<li>Trial 9</li>
+				<li>Tune: orl scirroco r</li>
+				<li>Date: 5 November 2018 (9:55AM)</li>
+				<br>
+				<li>Lap 1: 2:27.353 (Outlap)</li>
+				<li>Lap 2: 2:23.654</li>
+				<li>Lap 3: 2:23.264</li>
+				<li>Lap 4: 2:23.079</li>
+				<li>Lap 5: 2:22.488 (Flagged)</li>
+				<br>
+				<li>BEST LAP: 2:22.488 (Lap 5)</li>
+				<li>AVERAGE W/OUTLAP: 2:23.968</li>
+				<li>AVERAGE W/O OUTLAP: 2:23.121</li>
+			</ul>
+			<ul>
+				<li>Trial 10</li>
+				<li>Tune: orl scirocco r</li>
+				<li>Date: 5 November 2018 (10:16AM)</li>
+				<br>
+				<li>Lap 1: 2:27.225 (Outlap)</li>
+				<li>Lap 2: 2:23.212 (Flagged)</li>
+				<li>Lap 3: 2:22.427</li>
+				<li>Lap 4: 2:22.016</li>
+				<li>Lap 5: ~2:22.100</li>
+				<br>
+				<li>BEST LAP: PR 2:22.016 (Lap 4)</li>
+				<li>AVERAGE W/OUTLAP: 2:23.396</li>
+				<li>AVERAGE W/O OUTLAP: 2:22.439</li>
+			</ul>
+			<ul>
+				<li>Trial 11</li>
+				<li>Tune: orl scirocco r</li>
+				<li>Date: 5 November 2018 (12:00AM)</li>
+				<br>
+				<li>Lap 1: 2:27.501 (Outlap)</li>
+				<li>Lap 2: 2:23.731 (Flagged)</li>
+				<li>Lap 3: 2:22.698</li>
+				<li>Lap 4: 2:22.596</li>
+				<li>Lap 5: 2:22.807 (Flagged)</li>
+				<br>
+				<li>BEST LAP: 2:22.596 (Lap 4)</li>
+				<li>AVERAGE W/OUTLAP: </li>
+				<li>AVERAGE W/O OUTLAP: </li>
+			</ul>
+			<ul>
+				<li>Trial 12</li>
+				<li>Tune: orl scirocco r</li>
+				<li>Date: 5 November 2018 (12:15PM)</li>
+				<br>
+				<li>Lap 1: 2:27.211 (Outlap)</li>
+				<li>Lap 2: 2:22.992</li>
+				<li>Lap 3: 2:22.740 (Flagged)</li>
+				<li>Lap 4: 2:22.446 (Flagged)</li>
+				<li>Lap 5: 2:22.677 (Flagged)</li>
+				<br>
+				<li>BEST LAP: 2:22.446 (Lap 4)</li>
+				<li>AVERAGE W/OUTLAP: </li>
+				<li>AVERAGE W/O OUTLAP: </li>
+			</ul> 
+			<p>Tune Comparison</p>
+			<p>Orl optimized average w/o outlap overall: 2:23.166</p>
+			<p>Orl basic tune average w/o outlap overall: 2:23.225</p>
+			<p><strong>Use orl scirocco r</strong></p>
+			<br>
+			<p>Race 2:</p>
+			<p>Time: November 12 at 1PM MST</p>
+			<p>Race Conditions: Dry</p>
+			<p>Track: Magello Club Circuit</p>
+			<br>
+			<p>Race 3:</p>
+			<p>Time: November 19 at 1PM MST</p>
+			<p>Race Conditions: Dry</p>
+			<p>Track: Monza Alt Circuit</p>
+			<br>
+			<p>Race 4:</p>
+			<p>Time: November 26 at 1PM MST</p>
+			<p>Race Conditions: Dry</p>
+			<p>Track: Long Beach</p>
+			<br>
+			<p>Race 5:</p>
+			<p>Time: December 3 at 1PM MST</p>
+			<p>Race Conditions: Dry</p>
+			<p>Track: Indianapolis GP Circuit</p>
+			<br>
+			<p>Race 6:</p>
+			<p>Time: December 10 at 1PM MST</p>
+			<p>Race Conditions: Dry</p>
+			<p>Track: Maple Valley Full Circuit</p>
+	</div>
+</body>
+<footer>
+	<div class="heading">
+		<a href="./home.html" class="menu-home">Home</a>
+		<a href="./map.html" class="menu-map">Map</a>
+	</div>
+</footer>
+<html>

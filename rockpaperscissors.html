@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Database Z | Rock, Paper, Scissors</title>
+	<link rel="stylesheet" href="stylesheet.css" type="text/CSS">
+	<link href="https://fonts.googleapis.com/css?family=Assistant|Kaushan+Script|Merienda" rel="stylesheet">
+	<script src="rps.js"></script>
+</head>
+<body>
+	<div class="heading">
+		<h1><em>Database Z</em></h1>
+		<a href="./home.html" class="menu-home">Home</a>
+		<a href="./map.html" class="menu-map">Map</a>
+	</div>
+	<div class="intro">
+		<h3>Rock, Paper, Scissors</h3>
+		<p>Play below!</p>
+	</div>
+
+	<div id="choice">
+		<h3 onclick="choseRock();">Rock</h3>
+		<h3 onclick="chosePaper();">Paper</h3>
+		<h3 onclick="choseScissors();">Scissors</h3>
+	</div>
+
+	<div id="result">
+		<h3>You won!</h3>
+		<button type="button" onclick="reset();">Play again</button>
+	</div>
+
+	<div id="counter">
+		<h3>Scoreboard</h3>
+		<p id="playerwins"></p>
+		<p id="computerwins"></p>
+		<br><br>
+		<p id="rockcounter"></p>
+		<p id="papercounter"></p>
+		<p id="scissorscounter"></p>
+	</div>
+</body>
+<footer>
+	<div class="heading">
+		<a href="./home.html" class="menu-home">Home</a>
+		<a href="./map.html" class="menu-map">Map</a>
+	</div>
+</footer>
+<html>

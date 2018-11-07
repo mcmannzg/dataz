@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Database Z | Javascript Notes</title>
+	<link rel="stylesheet" href="stylesheet.css" type="text/CSS">
+	<link href="https://fonts.googleapis.com/css?family=Assistant|Kaushan+Script|Merienda" rel="stylesheet">
+</head>
+<body>
+	<div class="heading">
+		<h1><em>Database Z</em></h1>
+		<a href="./home.html" class="menu-home">Home</a>
+		<a href="./map.html" class="menu-map">Map</a>
+	</div>
+	<div class="intro">
+		<h3>Javascript</h3>
+		<p>This page will be used to take notes on the information learned at codecadamy on JavaScript.</p>
+		<a href="#secone">Section 1</a>
+		<a href="#sectwo">Section 2</a>
+	</div>
+	<div class="javascriptnotes-section1" id="secone">
+		<h3>Section 1 Notes</h3>
+			<h4>Console</h4>
+				<p>The console is a panel that displays important messages like errors. If we want to see what the computer is doing with our code, we can print, or <em>log</em> to our console directly.</p>
+				<p>Console refers to an object, a collection of data and actions, that we can use in our code.</p>
+				<p>Keywords are words that are built into the JavaScript language, so that the computer can recognize them and treat them specially.</p>
+				<p>One action that is built into the console object is the <em>.log()</em>method. When we write <em>console.log()</em> what we put inside the parentheses will get printed, or logged to the console.</p>
+				<p>Always use a semicolon to denote the end of a line. Example: console.log(5); will log 5 to the console.</p>
+		<br>
+			<h4>Comments</h4>
+				<p>Comments only exist for human readers, just as in HTML and CSS.</p>
+				<p>Comments are typically used to explain what the code is doing, to make it easier to understand the code when coming back to it later.</p>
+				<p>A comment can be made in JavaScript by using // (For a <em>single line comment</em>), or /* comment */ (For a <em>multi-line comment</em>).</p>
+		<br>
+			<h4>Data Types</h4>
+				<p><em>Data Types</em> are the classifications we give to the different kinds of data that we use in programming. There are seven fundamental data types.</p>
+				<ol>
+					<li><em>Number</em>. Any number, including decimals.</li>
+					<li><em>String</em>. Any grouping of characters on your keyboard surrounded by single quotes, or double quotes. Single quotes are typically more preferable. String can also be thought of as simply text.</li>
+					<li><em>Boolean</em>. There are only two possible values for this data type: <em>true</em>, or <em>false</em>. Can be thought of as on and off switches, or as the answers to a yes or no question.</li>
+					<li><em>Null</em>. Represents the intentional absence of a value, and is represented by the keyword <em>null</em>.</li>
+					<li><em>Undefined</em>. Denoted by the keyword <em>undefined</em>. It also represents the absence of a value, although it has a different use than <em>null</em>.</li>
+					<li><em>Symbol</em>. Unique identifiers, useful in more complex coding.</li>
+					<li><em>Object</em>. Collections of related data.</li>
+				</ol>
+				<p>The first six data types are considered <em>primitive data types</em>, they are the most basic data types in JavaScript.</p>
+		<br>
+			<h4>Arithmetic Operators</h4>
+				<p>An <em>operator</em> is a character that performs a task in our code. JavaScript has several built-in <em>arithmetic operators</em> that allow us to perform mathematical calculations on numbers.</p>
+				<p>Some of these operators include:</p>
+				<ol>
+					<li>Add: +</li>
+					<li>Subtract: -</li>
+					<li>Multiply: *</li>
+					<li>Divide: /</li>
+					<li>Remainder: %</li>
+				</ol>
+				<p>The <em>remainder</em> operator is sometimes called a <em>modulo</em>, that returns the number that remains after the right-hand number divides into the left hand number as many times as it evenly can. For example, 11 % 3 equals 2, because 3 fits into 11 three times, leaving 2 as the remainder.</p>
+				<p>When logging a mathematic operation, do not use quotes. Example: console.log(20 + 1); will return 21. console.log('20 + 1'); will return 20 + 1.</p>
+		<br>
+			<h4 id="concatenation">String Concatenation</h4>
+				<p>Operators can be used for other data types besides numbers too. When a + operator is used on two strings, it appends the right string to the left string. Example: console.log('I love ' + 'to code'); will print, I love to code.</p>
+				<p>The process of appending one string to another is called <em>concatenation</em>.</p>
+				<p>A computer will join two strings exactly, so if you want a space between two strings, you must manually add it in.</p>
+		<br>
+			<h4>Properties</h4>
+				<p>Every string has a property called <em>length</em>, that store the number of characters in that string. You can retrieve property information by appending the string with a period and the property name. Example: console.log('Hello'.length); will print 5.</p>
+				<p>The dot before a property is also an operator, called the <em>dot operator</em>.</p>
+		<br>
+			<h4>Methods</h4>
+				<p><em>Methods</em> are actions that we can perform.</p>
+				<p>We <em>call</em> (use) these methods by appending an instance with the dot operator, the name of the method, and the opening and closing of parentheses. Example: 'example string'.methodName();</p>
+				<p>When we use console.log(), we're calling on the .log() method on the console object. Some examples of string methods are: console.log('hello'.toUpperCase()); prints 'HELLO', and console.log('Hey'.startsWith('H')); prints true.</p>
+				<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/prototype" target="_blank">Here is a list of all built-in string methods and objects. (link)</a>
+		<br>
+			<h4>Built-in Objects</h4>
+				<p>In addition to console, there are other objects built in to JavaScript.</p>
+				<p>If you wanted to perform more complex mathematical operations than arithmetic, JavaScript has the built-in <em>Math</em> object.</p>
+				<p>Objects have methods. The <em>Math</em> object for example, has the .random() object: console.log(Math.random()); will print a random number between 0 and 1.</p>
+				<p>If you wanted to generate a random number between a different set of numbers, you simply multiply by that number. Example: console.log(Math.random() * 100); will print a random number between 0 and 100.</p>
+				<p>Additionally, if you wanted that random number to be a whole number, you could use the Math.floor() method, which takes a decimal number and rounds down to the nearest whole number. Example: console.log(Math.floor(Math.random() * 100)); will print a whole number between 0 and 100.</p>
+				<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math" target="_blank">A complete list of all the properties and methods on the Math object can be found here. (link)</a>
+		<br><br>
+			<h4>Section 1 Practice Quiz (Answers Below)</h4>
+				<ol>
+					<li>What would we use to log a data type to the console?</li>
+					<li>How would we write a single-line comment, and why is using single-line comments important?</li>
+					<li>What are the seven data types?</li>
+					<li>What is an operator?</li>
+					<li>What does concatenation mean?</li>
+					<li>What are methods, and how do we call them?</li>
+					<li>What is one example of a method that can be used on the Math object, and what is its purpose?</li>
+				</ol>
+		<br><br>
+			<h4>Section 1 Practice Quiz Answers</h4>
+				<ol>
+					<li>console.log();</li>
+					<li>A single-line comment is denoted by //, and is useful for making your code easier to understand when you come back to it later.</li>
+					<li>Number, string, null, undefined, object, boolean, and symbol</li>
+					<li>A character that performs a task in our code.</li>
+					<li>Concatenation is when two strings are appended together using a mathematical operator.</li>
+					<li>Methods are actions that we can perform, and can be called by appending an instance of the dot operator, followed by the name of the method, and opening and closing parentheses. .methodName()</li>
+					<li>.random() can be used with Math, and generates a random number between 0 and 1.</li>
+				</ol>
+	</div>
+	<div class="javascriptnotes-section2" id="sectwo">
+		<h3>Section 2 Notes</h3>
+			<h4>Variables</h4>
+				<p>A <em>variable</em> is a container for a value. Variables can be thought of as containers for information that lives in a computer's memory.</p>
+				<p>Information that can be stored in variables includes usernames, account numbers, or personalized greetings.</p>
+				<p>Variables are also useful for labeling data with a descriptive name, so that programs can be easier understood.</p>
+				<p>There are only a few things you can do with variables:</p>
+				<ol>
+					<li>Create a variable with a descriptive name.</li>
+					<li>Store or update information stored in a variable.</li>
+					<li>Reference or "get" information stored in a variable.</li>
+				</ol>
+				<p>Variables are not the same thing as values. Variables contain values and represent them with a name.</p>
+			<br>
+			<h4>Create a Variable: var</h4>
+				<p>The <em>var</em> keyword declares a variable. Variables generally look as such: var varName = 'Name'; The variable can be called upon by inputting the variable name, in which it will print the value that the variable has stored.<br> Example:<br>var varName = 'Name';<br>console.log(varName);<br> will print a value of Name.</p>
+				<p><em>Camel casing</em> is a standard convention in JavaScript for how to capitalize. You group all the words into one, and write the first word as lowercase, and the rest of the following words starting with uppercase. Example: thisIsTheVarName</p>
+				<p>The = symbol is the <em>assignment operator</em>, which assigns a value to a variable.</p>
+				<p>To print the variables value, simply use the variable name. Example: console.log(varName);</p>
+				<p>The rules for naming variables:</p>
+				<ol>
+					<li>Variable names will never start with a number</li>
+					<li>Variable names are case sensitive</li>
+					<li>Variable names cannot be the same as keywords</li>
+				</ol>
+			<br>
+			<h4>Create a Variable: let</h4>
+				<p>The <em>let</em> keyword signals that the variable can be reassigned to a different value.</p>
+				<p>A variable can be declared even if it has no value, it will simply print undefined until it has been defined.</p>
+				<p>When using <em>let</em>, you can assign the variable a value at any time by simply typing the name of the variable, and setting it equal to a value. Example:<br>
+				let varName = true; <br>
+				// This will print true <br>
+				varName = false; <br>
+				// Now it will print false
+				</p>
+			<br>
+			<h4>Create a Variable: const</h4>
+				<p><em>const</em> is short for constant, and can be used to store a value just like var and let.</p>
+				<p>A <em>const</em> variable cannot be reassigned a value, because it is constant, and must be assigned a value when declared.</p>
+				<p>When deciding whether to use let or const, think about if you might need to reassign the value at a later point, if you won't need to, use const.</p>
+			<br>
+			<h4>Mathematical Assignment Operators</h4>
+				<p>Consider the example below:<br>
+				let w = 4;<br>
+				w = w + 1;<br>
+				console.log(w);<br>
+				// Output: 5</p>
+				<p>In the example, the variable w is assigned a value of 4, then is reassigned a value of w + 1, making the new value of w, 5. A different way of accomplishing this task would be to use <em>mathematical assignment operators</em>. We could rewrite the code above to say:<br>
+				let w = 4;<br>
+				w += 1;<br>
+				console.log(w);<br>
+				// Output: 5</p>
+				<p>In the second example, we use the += assignment operator to reassign the variable w. We are essentially performing the mathematical operation of the first operator (+) using the number to the right, then reassigning w to the computed value.</p>
+				<p>Other mathematical operators operate in a similar fashion: -=, *=, /=.</p>
+			<br>
+			<h4>The Increment and Decrement Operator</h4>
+				<p>The <em>Increment</em> operator is ++, and the <em>Decrement</em> operator is --.</p>
+				<p>The increment operator will increase the value of a variable by 1, and the decrement operator will increase the value of a variable by 1.</p>
+				<p>Example of how to use these two operators:<br>
+					let increaseMe = 1;<br>
+					let decreaseMe = 2;<br><br>
+
+					increaseMe++;<br>
+					decreaseMe--;<br>
+					// Both variables now have a value of 1</p>
+			<br>
+			<h4><a href="#concatenation">String Concatenation</a> with Variables</h4>
+				<p>The + operator can be used to combine two string values even if those values are stored in variables.</p>
+				<p>Example:<br>
+				let petName = 'Snoop';<br>
+				console.log('My pets name is' + 'petName' + '.');<br>
+				// This will print: My pets name is Snoop.</p>
+			<br>
+			<h4>String Interpolation</h4>
+				<p>In JavaScript, we can insert, or <em>interpolate</em> variables into strings using <em>template literals</em>.</p>
+				<p>Consider this example:<br>
+				const myPet = 'sloth';<br>
+				console.log(`I own a pet ${myPet}.`);<br>
+				// This will print: I own a pet sloth.</p>
+				<p>A template literal is wrapped in backticks (`)</p>
+				<p>Template literals usually look like ${}</p>
+			<br>
+			<h4>typeof Operator</h4>
+				<p>If you need to check the data type of a variable's value, you can use the <em>typeof</em> operator.</p>
+				<p>The typeof operator checks the value to its right and returns a string of the data type. Example:<br>
+				const unknown1 = 'hello';<br>
+				console.log(typeof unknown1);<br>
+				// The output would be: string</p>
+			<br><br>
+			<h4>Section 2 Practice Quiz</h4>
+				<ol>
+					<li>What is a variable, and what are they typically used for?</li>
+					<li>What are the three ways to create a variable?</li>
+					<li>What are the three rules for naming a variable?</li>
+					<li>How is let different from const?</li>
+					<li>How are the increment and decrement operators used?</li>
+					<li>What does it mean to interpolate something?</li>
+					<li>How does one use template literals?</li>
+					<li>What is the function of the typeof operator?</li>
+				</ol>
+			<br><br>
+			<h4>Section 2 Practice Quiz Answers</h4>
+				<ol>
+					<li>A variable is a container for a value, and can be used to assign a value a name, store or update information stored in a variable, and reference information stored in a variable.</li>
+					<li>Use one of the three variable keywords: var, let, or const.</li>
+					<li>A variable cannot start with a number, it cannot be the same as a keyword, and they are case sensitive.</li>
+					<li>A variable that uses the let keyword can have its value reassigned and does not have to have a value assigned to it upon creation, while a variable with the const keyword cannot be reassigned, and must have a value declared when the variable is created.</li>
+					<li>For increments, use ++ (i.e. varName++; will add 1 to the value of varName). For decrements, use -- (i.e. varName--; will subtract 1 from the value of varName.)</li>
+					<li>To interpolate is to insert.</li>
+					<li>To use a template literal, wrap a value in `` (backticks), and put the variable inside of ${}. Example: console.log(`I have a pet named ${petName}.`);</li>
+					<li>The typeof operator can be used to determine the data type of a value.</li>
+				</ol>		
+	</div>
+	<div class="javascriptnotes-section3" id="secthree">
+		<h3>Conditional Statements</h3>
+			<h4>What are Conditional Statements?</h4>
+				<p>A <em>conditional statement</em> checks specific conditions and performs a task based on those conditions.</p>
+		<br>
+			<h4>The if Keyword</h4>
+				<p>We can perform a task based on a condition using an <em>if statement</em>. Example:<br>
+				if (true) {<br>
+					console.log('This message will print!');<br>
+				}<br>
+				// Prints: This message will print! </p>
+				<p>An if statement is composed of:</p>
+				<ul>
+					<li>The if keyword, followed by a set of parentheses which is followed by a <em>code block</em> indicated by a set of curley braces {}.</li>
+					<li>If the condition evaluates to true, the code inside the curly braces executes.</li>
+					<li>If the condition evaluates to false, the block won't execute.</li>
+				</ul>
+		<br>
+			<h4>If...Else Statements</h4>
+				<p>If we wanted to add a default behavior for when a condition is false, we can use the else keyword to execute a code block for when the condition evaluates to false.</p>
+				<p>An else statement must be paired with an if statement, and operates in a similar fashion as the if statement, although it does not have a condition in parentheses.</p>
+		<br>
+			<h4>Comparison Operators</h4>
+				<p><em>Comparison operators</em> are used for comparing different values, and include:</p>
+				<ul>
+					<li>Less than: <</li>
+					<li>Greater than: ></li>
+					<li>Less than or equal to: <=</li>
+					<li>Greater than or equal to: >=</li>
+					<li>Is equal to: ===</li>
+					<li>Is NOT equal to: !==</li>
+				</ul>
+				<p>Comparison operators compare the left value to the right value.</p>
+				<p>All comparison statements evaluate to either true or false, and are composed of:</p>
+				<ul>
+					<li>Two values that will be compared</li>
+					<li>An operator that separates the values and compares them accordingly.</li>
+				</ul>
+		<br>
+			<h4>Logical Operators</h4>
+				<p>Working with conditionals means that we will be using booleans</p>
+				<p>There are operators that work with boolean values, which are known as <em>logical operators</em>. Logical operators are used to add more sophisticated logic to our conditionals. The three logical operators are:</p>
+				<ul>
+					<li>The <em>and</em> operator (&&)</li>
+					<li>The <em>or</em> operator (||)</li>
+					<li>The <em>not</em> operator, or the <em>bang</em> operator (!)</li>
+				</ul>
+				<p>When we use the && operator, we are checking that two things are true. Example:<br>
+				if (stoplight === 'green' && pedestrians === 0) {<br>
+					console.log('Go!');<br>
+				} else {<br>
+					console.log('Stop');<br>
+				}</p>
+				<p>When using the && operator, both conditions must evaluate to true for the entire condition to evaluate to true and execute.</p>
+				<p>If we only care about either condition being true, we can use the || operator. Example:<br>
+				if (day === 'Saturday' || day === 'Sunday') {<br>
+					console.log('Enjoy the weekend!');<br>
+				} else {<br>
+					console.log('Do some work.');<br>
+				}</p>
+				<p>When using the || operator, only one of the conditions must evaluate to true for the overall statement to evaluate to true.</p>
+	</div>
+	<div class="javascriptnotes-section4" id="secfour">
+		<h3>Logical Operators</h3>
+			<p><em>Logical operators</em> use boolean values (true and false).</p>
+			<p>The three types of logical operators are:</p>
+			<ol>
+				<li>The <em>and</em> operator (&&)</li>
+				<li>The <em>or</em> operator (||)</li>
+				<li>The <em>not</em> operator (!)</li>
+			</ol>
+			<p>When using the && operator, both conditions must evaluate to true for the code to execute. Example:<br>
+			if (stoplight === 'green' && pedestrians === 0) {<br>
+			console.log('Go!');<br>
+			} else {<br>
+			console.log('Stop.');<br>
+			}</p>
+			<p>If only one of two or more conditions needs to evaluate to true, we use the || operator. If both of the conditions are false, the else code will execute.</p>
+			<p>Example:<br>
+				if (day === 'Saturday' || day === 'Sunday') {<br>
+				console.log('Enjoy the weekend!');<br>
+				} else {<br>
+				console.log('Do some work.');<br>
+				}</p>
+			<p>The ! operator reverses the value of a boolean.</p>
+			<p>Example:<br>
+				let sleepy = true;<br>
+				console.log(!sleepy);<br>
+				// Prints false</p>
+			<br><br>
+			<h4>Truthy and Falsy</h4>
+				<p>We might need to check if a variable exists, without needing to check its actual value.</p>
+				<p>Examples of falsy values include: 0, empty strings ('' or ""), null, undefined, and NaN (Not a Number).</p>
+				<p>To check if a variable is truthy or falsy, make the condition of an if statement that variable. Example:<br>
+					let myVariable = 0;<br>
+					if (myVariable) {<br>
+					console.log('The variable has a value');<br>
+				} else {<br>
+					console.log('The variable does not have a value');<br>
+				}<br>
+				// Prints: The variable does not have a value</p>
+			<br><br>
+			<h4>Truthy and Falsy Assignment</h4>
+				<p>You can use truthy and falsy evaluations to assign variables.</p>
+				<p>With boolean conditions, JavaScript assigns a truthy value to a variable if you use the || operator in the assignment. Example:<br>
+				let defaultName = username || 'Stranger';</p>
+				<p>The || operator checks the left hand condition first, so the variable defaultName will be assigned the actual value of username if it is truthy, and 'Stranger' if username is falsy. This is referred to as <em>short circuit evaluation</em></p>
+			<br><br>
+			<h4>Ternary Operator</h4>
+				<p>Ternary Operators shorten if...else statements. To use a ternary operator, write the variable, followed by a ?, then write the code to be executed if the statement evaluates to true, seperate the else statement with a colon, and don't forget the semicolon.</p>
+				<p>isNightTime ?<br>
+				console.log('Turn on the lights!') : console.log('Turn off the lights!');</p>
+			<br><br>
+			<h4>Else If Statements</h4>
+				<p>You can add as many else if statements as you like.</p>
+				<p>The else if comes after the if statement, and before the else statement.</p>
+				<p>if...else if...else statements are read from top to bottom, so the first condition that evaluates to true will be executed.</p>
+			<br><br>
+			<h4>The Switch Keyword</h4>
+				<p>We can use the <em>switch</em> keyword if we want to check a lot of conditions.</p>
+				<p>A switch statement consists of the switch keyword, followed by a condition in parentheses, then "cases" that contain code to be executed. Example:<br>
+					switch (groceryItem) {<br>
+					case 'tomato':<br>
+						console.log('Tomatoes are $0.49');<br>
+						break;<br>
+					case 'lime':<br>
+						console.log('Limes are $1.49');<br>
+						break;<br>
+					default:<br>
+						console.log('Invalid Item');<br>
+						break;<br>
+					}</p>
+				<p>The value that is inside the parentheses following the switch keyword contains the value that each case will compare to.</p>
+				<p>Inside the block {} there are multiple cases that check if the expression matches the specified value that comes after it.</p>
+				<p>The break keyword tell the computer to exit the block and not execute anymore code or check any other cases inside the code block. Without the break keyword, a switch will execute the code for all matching cases.</p>
+				<p>There should always be a default statement at the end of a switch. This tells the computer what to do if none of the cases are true.</p>
+	</div>
+</body>
+<footer>
+	<div class="heading">
+		<a href="./home.html" class="menu-home">Home</a>
+		<a href="./map.html" class="menu-map">Map</a>
+	</div>
+</footer>
+<html>
